@@ -21,7 +21,7 @@
 		<header>
 			<nav class="navbar navbar-expand-md navbar-dark" style="background-color: tomato">
 				<div>
-					<a href="https://www.javaguides.net" class="navbar-brand"> Todo
+					<a href="#" class="navbar-brand"> Todo
 						App</a>
 				</div>
 

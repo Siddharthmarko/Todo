@@ -20,9 +20,6 @@ import java.io.IOException;
 import todo.dao.*;
 import todo.model.*;
 
-/**
- * @email Ramesh Fadatare
- */
 
 @WebServlet("/login")
 public class LoginController extends HttpServlet {

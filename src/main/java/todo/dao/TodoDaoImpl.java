@@ -11,13 +11,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * This DAO class provides CRUD database operations for the table todos in the
- * database.
- * 
- * @author Ramesh Fadatare
- *
- */
+
 
 public class TodoDaoImpl implements TodoDao {
 

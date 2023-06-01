@@ -2,13 +2,7 @@ package todo.model;
 
 import java.time.LocalDate;
 
-/**
- * Todo.java
- * This is a model class represents a Todo entity
- * 
- * @author Ramesh Fadatare
- *
- */
+
 public class Todo {
 
 	private Long id;

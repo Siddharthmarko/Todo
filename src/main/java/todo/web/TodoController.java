@@ -17,12 +17,6 @@ import javax.servlet.http.HttpServletResponse;
 import todo.dao.*;
 import todo.model.*;
 
-/**
- * ControllerServlet.java This servlet acts as a page controller for the
- * application, handling all requests from the todo.
- * 
- * @email Ramesh Fadatare
- */
 
 @WebServlet("/")
 public class TodoController extends HttpServlet {
@@ -79,10 +73,7 @@ public class TodoController extends HttpServlet {
 		System.out.println("listTodo method");
 		request.setAttribute("listTodo", listTodo);
 		System.out.println("print todo");
-		// for (Todo todo : listTodo) {
-		// System.out.println(todo.getStatus() + " - " + todo.getTargetDate() + " - " +
-		// todo.getStatus());
-		// }
+		
 		RequestDispatcher dispatcher = request.getRequestDispatcher("todo/todo-list.jsp");
 		dispatcher.forward(request, response);
 	}
@@ -122,11 +113,6 @@ public class TodoController extends HttpServlet {
 		// String username = user;
 		String description = request.getParameter("description");
 		System.out.println(user);
-		/*
-		 * DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyy-mm-dd");
-		 * LocalDate targetDate =
-		 * LocalDate.parse(request.getParameter("targetDate"),df);
-		 */
 
 		boolean isDone = Boolean.valueOf(request.getParameter("isDone"));
 		Todo newTodo = new Todo(title, username, description, LocalDate.now(), isDone);
